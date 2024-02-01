@@ -13,7 +13,6 @@ driver.get("https://smallpdf.com/pdf-to-word")
 
 
 driver.find_element(By.XPATH,"//input[@type='file']").send_keys(r"C:\Mine\Balaji Dinakaran Profile.pdf")
-
 time.sleep(10)
 driver.quit()
 
