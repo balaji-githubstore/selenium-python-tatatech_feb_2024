@@ -18,6 +18,9 @@ driver.get("https://netbanking.hdfcbank.com/netbanking/IpinResetUsingOTP.htm")
 wait=WebDriverWait(driver,30)
 wait.until(expected_conditions.alert_is_present())
 
+# actual_alert_text= wait.until(expected_conditions.alert_is_present()).text
+# print(actual_alert_text)
+
 actual_alert_text= driver.switch_to.alert.text
 print(actual_alert_text)
 
