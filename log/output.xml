@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.11.4 on win32)" generated="2024-02-09T05:23:24.240963" rpa="false" schemaversion="5">
+<suite id="s1" name="Demo2 Selenium Suite" source="C:\Mine\Company\Tata Tech Jan 2024\SeleniumProject\zrobot_suite\demo2_selenium_suite.robot">
+<test id="s1-t1" name="TC1 FB Login" line="15">
+<kw name="Setup Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:24.519203" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<arg>browser=${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:23:24.518206" elapsed="2.273392"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-09T05:23:26.791598" elapsed="0.139140"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-09T05:23:26.930738" elapsed="0.001993"/>
+</kw>
+<arg>edge</arg>
+<status status="PASS" start="2024-02-09T05:23:24.517225" elapsed="2.415506"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:26.933728" level="INFO">Opening url 'https://www.facebook.com/'</msg>
+<arg>url=https://www.facebook.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:23:26.933728" elapsed="3.084825"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:30.021541" level="INFO">Clicking element 'xpath=//button[text()='Allow all cookies']'.</msg>
+<arg>xpath=//button[text()='Allow all cookies']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:30.019548" elapsed="0.893616"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:30.914159" level="INFO">Typing text 'hello12344444@gmail.com' into text field 'id=email'.</msg>
+<arg>locator=id=email</arg>
+<arg>text=hello12344444@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:30.913164" elapsed="0.211431"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:31.125594" level="INFO">Typing password into text field 'id=pass'.</msg>
+<msg time="2024-02-09T05:23:31.170474" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=pass</arg>
+<arg>pass</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:31.124595" elapsed="0.104720"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:31.230313" level="INFO">Clicking element 'name=login'.</msg>
+<arg>name=login</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:31.229315" elapsed="2.808045"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T05:23:34.037360" elapsed="2.150302"/>
+</kw>
+<status status="PASS" start="2024-02-09T05:23:24.517225" elapsed="11.670437"/>
+</test>
+<test id="s1-t2" name="TC2 FB SignUP" line="26">
+<kw name="Setup Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:36.191645" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<arg>browser=${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:23:36.191645" elapsed="1.726463"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-09T05:23:37.918108" elapsed="0.117684"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-09T05:23:38.035792" elapsed="0.000999"/>
+</kw>
+<arg>edge</arg>
+<status status="PASS" start="2024-02-09T05:23:36.190649" elapsed="1.846142"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:38.037788" level="INFO">Opening url 'https://www.facebook.com/'</msg>
+<arg>url=https://www.facebook.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:23:38.036791" elapsed="3.177775"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:41.215565" level="INFO">Clicking element 'xpath=//button[text()='Allow all cookies']'.</msg>
+<arg>xpath=//button[text()='Allow all cookies']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:41.214566" elapsed="0.071808"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:41.287372" level="INFO">Clicking element 'link=Create new account'.</msg>
+<arg>link=Create new account</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:41.286374" elapsed="0.219020"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:41.506392" level="INFO">Typing text 'John' into text field 'name=firstname'.</msg>
+<arg>name=firstname</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:41.505394" elapsed="0.290225"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:41.796616" level="INFO">Selecting options from selection list 'id=day' by label 20.</msg>
+<arg>id=day</arg>
+<arg>20</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2024-02-09T05:23:41.796616" elapsed="0.115699"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T05:23:41.913311" elapsed="2.119693"/>
+</kw>
+<status status="PASS" start="2024-02-09T05:23:36.188656" elapsed="7.845339"/>
+</test>
+<test id="s1-t3" name="TC3 Tabs" line="36">
+<kw name="Setup Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:44.037976" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<arg>browser=${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:23:44.036979" elapsed="1.705768"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-09T05:23:45.742747" elapsed="0.160571"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-09T05:23:45.904317" elapsed="0.000997"/>
+</kw>
+<arg>edge</arg>
+<status status="PASS" start="2024-02-09T05:23:44.035986" elapsed="1.869328"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:45.905314" level="INFO">Opening url 'https://www.db4free.net/'</msg>
+<arg>url=https://www.db4free.net/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:23:45.905314" elapsed="3.098676"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:49.003990" level="INFO">Clicking element 'partial link=phpMyAdmin'.</msg>
+<arg>partial link=phpMyAdmin</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:49.003990" elapsed="0.101728"/>
+</kw>
+<kw name="Switch Window" owner="SeleniumLibrary">
+<arg>phpMyAdmin</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:49.105718" elapsed="0.731750"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:49.838450" level="INFO">Typing text 'John' into text field 'id=input_username'.</msg>
+<arg>id=input_username</arg>
+<arg>John</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:49.837468" elapsed="0.135622"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:49.973090" level="INFO">Typing password into text field 'id=input_password'.</msg>
+<msg time="2024-02-09T05:23:50.014978" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>id=input_password</arg>
+<arg>admin122</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:49.973090" elapsed="0.106715"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:50.079805" level="INFO">Clicking element 'id=input_go'.</msg>
+<arg>id=input_go</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:23:50.079805" elapsed="0.290224"/>
+</kw>
+<kw name="Element Should Contain" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:50.417900" level="INFO">Element 'id=pma_errors' contains text 'Access denied for user'.</msg>
+<arg>id=pma_errors</arg>
+<arg>Access denied for user</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<status status="PASS" start="2024-02-09T05:23:50.370029" elapsed="0.047871"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T05:23:50.418899" elapsed="2.134360"/>
+</kw>
+<status status="PASS" start="2024-02-09T05:23:44.034982" elapsed="8.519278"/>
+</test>
+<test id="s1-t4" name="TC4 Frame" line="49">
+<kw name="Setup Browser" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:52.564223" level="INFO">Opening browser 'edge' to base url 'None'.</msg>
+<arg>browser=${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:23:52.562231" elapsed="1.568159"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-02-09T05:23:54.131388" elapsed="0.222240"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2024-02-09T05:23:54.353628" elapsed="0.002008"/>
+</kw>
+<arg>edge</arg>
+<status status="PASS" start="2024-02-09T05:23:52.559237" elapsed="1.796399"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:23:54.356620" level="INFO">Opening url 'https://netbanking.hdfcbank.com/netbanking/'</msg>
+<arg>url=https://netbanking.hdfcbank.com/netbanking/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-02-09T05:23:54.355636" elapsed="5.854395"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:24:00.211031" level="INFO">Selecting frame '//frame[@name='login_page']'.</msg>
+<arg>//frame[@name='login_page']</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-02-09T05:24:00.210031" elapsed="0.047872"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:24:00.259928" level="INFO">Typing text 'john123' into text field 'name=fldLoginUserId'.</msg>
+<arg>name=fldLoginUserId</arg>
+<arg>john123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:24:00.257903" elapsed="0.105106"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-02-09T05:24:00.363009" level="INFO">Clicking element 'link=CONTINUE'.</msg>
+<arg>link=CONTINUE</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-02-09T05:24:00.363009" elapsed="4.057976"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-02-09T05:24:04.420985" elapsed="0.001994"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-02-09T05:24:04.422979" elapsed="2.202205"/>
+</kw>
+<status status="PASS" start="2024-02-09T05:23:52.556257" elapsed="14.068927"/>
+</test>
+<status status="PASS" start="2024-02-09T05:23:24.243938" elapsed="42.382254"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Demo2 Selenium Suite">Demo2 Selenium Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
